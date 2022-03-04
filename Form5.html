@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>4th member Registration</title>
+  </head>
+
+  <body>
+    <h2><u> Register 4th member for Vaccination </u></h2>
+
+    <form name="form" onsubmit="return func()" onclick="return func1()">
+      <fieldset>
+        <legend>
+          <b> <u> REGISTER HERE </u> </b>
+        </legend>
+
+        Photo ID Proof :
+        <div>
+          <select required>
+            <option value="Aadhaar Card">Aadhaar Card</option>
+            <option value="Driving License">Driving License</option>
+            <option value="PAN Card">PAN Card</option>
+            <option value="Passport">Passport</option>
+            <option value="Pension Passbook">Pension Passbook</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          Name (As in Photo ID Proof) :
+          <input type="text" name="name" required />
+        </div>
+        <br />
+
+        <div>
+          Upload Photo ID Proof : <input type="file" name="file" required />
+        </div>
+        <br />
+
+        <div>
+          Gender :
+          <select required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <br />
+
+        <div>D.O.B : <input type="date" name="date" required /></div>
+        <br />
+
+        <input type="submit" value="Register Member 4" />
+        <input type="button" value="Go To HomePage" onclick="return func1()" />
+      </fieldset>
+    </form>
+  </body>
+
+  <style>
+    body {
+      background-image: url("Vaccine-image1.jpg");
+      background-size: cover;
+    }
+
+    form {
+      position: fixed;
+      left: 200px;
+      top: 200px;
+      font-size: 150%;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      position: fixed;
+      left: 200px;
+      top: 100px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    fieldset {
+      background-color: rgba(222, 184, 135, 0.5);
+    }
+  </style>
+
+  <script>
+    function func() {
+      var name = document.form.name.value;
+
+      if (name == "") alert("Please enter name");
+      else {
+        alert(
+          "Registration of 4th member for Vaccination is successfully done"
+        );
+        window.open("project1.html");
+      }
+    }
+
+    function func1() {
+      window.open("project1.html");
+    }
+  </script>
+</html>
